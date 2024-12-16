@@ -1,11 +1,6 @@
+@import './constants/colors';
+@import './constants/typography';
+
 @import './base/_fonts';
-@import './base/normalize';
-@import './base/reset';
-
-p {
-  display: flex;
-}
-
-* {
-  font-family: 'Noto Sans KR', sans-serif;
-}
+@import './base/_normalize';
+@import './base/_reset';
