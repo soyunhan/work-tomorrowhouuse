@@ -1,6 +1,7 @@
-p{
-    display: flex;
-    & em{
-      display: block;  
-    }
-};
+p {
+  display: flex;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
