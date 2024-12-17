@@ -625,6 +625,8 @@ address {
   padding: 0 16px;
   background-color: #fff;
   border: 1px solid #e0e2e7;
+  border-radius: 4px;
+  transition: background-color 200ms ease-in-out;
   appearance: none; }
   .form-select::placeholder,
   .form-input::placeholder {
