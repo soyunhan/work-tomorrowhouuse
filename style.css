@@ -761,10 +761,13 @@ i {
 .gnb-nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-right: -8px; }
 
 .gnb-nav-item {
-  margin-right: 24px; }
+  margin-right: 8px; }
+  .gnb-nav-item.is-active a, .gnb-nav-item:hover a {
+    color: #3da5f5; }
   .gnb-nav-item:last-child {
     margin-right: 0; }
   .gnb-nav-item a {
@@ -772,6 +775,8 @@ i {
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #3f4150;
+    display: block;
+    padding: 8px;
     font-weight: 700; }
 
 .gnb-icon-button {
