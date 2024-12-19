@@ -3,7 +3,8 @@
 
   &-list {
     @include flexbox(start);
-    margin-right: -#{$padding};
+    position: relative;
+    right: $padding;
   }
 
   &-item {
