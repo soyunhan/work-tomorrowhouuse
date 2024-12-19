@@ -425,6 +425,10 @@ address {
 .avatar-24, .avatar-32 {
   display: block;
   overflow: hidden;
+  background-image: url("./assets/images/img-user-default.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%; }
   .avatar-24 img, .avatar-32 img {
     display: block;
@@ -827,6 +831,10 @@ i {
     width: 32px;
     height: 32px;
     overflow: hidden;
+    background-image: url("./assets/images/img-user-default.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border: 3px solid #fff;
     border-radius: 50%;
     transition: border-color 200ms ease-in-out;
