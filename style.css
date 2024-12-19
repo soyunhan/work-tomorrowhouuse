@@ -749,6 +749,7 @@ i {
   content: '\e90b'; }
 
 .ic-new::before {
+  color: #f86d7d;
   content: '\e90c'; }
 
 .ic-search::before {
@@ -974,8 +975,7 @@ i {
   font-weight: 700; }
 
 .drawer-menu-item .ic-new {
-  font-size: 16px;
-  color: #f86d7d; }
+  font-size: 16px; }
 
 .search-history-header {
   display: flex;
@@ -1344,12 +1344,15 @@ i {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
+    height: 40px;
+    padding: 0 7px;
     position: relative;
-    left: -8px;
-    white-space: nowrap; }
+    left: -15px;
+    white-space: nowrap;
+    border-bottom: 1px solid #e0e2e7; }
   .lnb-item.is-active a {
     color: #3da5f5;
-    border-bottom: 2px solid #3da5f5; }
+    border-bottom-color: #3da5f5; }
   .lnb-item a {
     display: inline-flex;
     align-items: center;
@@ -1360,8 +1363,7 @@ i {
     color: #191a20;
     height: 40px;
     padding: 0 8px;
-    font-weight: 700; }
-  .lnb-item .ic-new {
-    color: #f86d7d; }
+    font-weight: 700;
+    border-bottom: 2px solid transparent; }
 
 /*# sourceMappingURL=style.css.map */
