@@ -1,5 +1,5 @@
-<html lang="ko">
 <!DOCTYPE html>
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="global-header">
+    <header class="global-header">
         <div class="gnb">
             <div class="container">
                 <div class="row">
@@ -141,26 +141,26 @@
 
                                 <!-- NOTE: 로그인을 하지 않은 경우  -->
                                 <!-- <div class="button-group">
-                  <button
-                    class="gnb-icon-button is-search lg-hidden"
-                    type="button"
-                    aria-label="검색창 열기 버튼"
-                  >
-                    <i class="ic-search"></i>
-                  </button>
-                  <a
-                    class="gnb-icon-button is-cart"
-                    href="/"
-                    aria-label="장바구니 페이지로 이동"
-                  >
-                    <i class="ic-cart"></i>
-                  </a>
+                    <button
+                      class="gnb-icon-button is-search lg-hidden"
+                      type="button"
+                      aria-label="검색창 열기 버튼"
+                    >
+                      <i class="ic-search"></i>
+                    </button>
+                    <a
+                      class="gnb-icon-button is-cart"
+                      href="/"
+                      aria-label="장바구니 페이지로 이동"
+                    >
+                      <i class="ic-cart"></i>
+                    </a>
 
-                  <div class="gnb-auth sm-hidden">
-                    <a href="/">로그인</a>
-                    <a href="/">회원가입</a>
-                  </div>
-                </div> -->
+                    <div class="gnb-auth sm-hidden">
+                      <a href="/">로그인</a>
+                      <a href="/">회원가입</a>
+                    </div>
+                  </div> -->
 
                                 <button class="btn-primary btn-40 sm-hidden" type="button">
                                     글쓰기
@@ -181,7 +181,7 @@
 
                         <ul class="lnb-list">
                             <li class="lnb-item is-active">
-                                <a href="/">스토어</a>
+                                <a href="/"> 스토어 </a>
                             </li>
                             <li class="lnb-item">
                                 <a href="/">카테고리</a>
@@ -215,7 +215,7 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
 
     <main class="product-show">
         <div class="container">
@@ -232,58 +232,74 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div role="region">
-            <ol>
-                <li role="tabpanel" aria-labelledby="product-carousel-tab-1">
-                    <figure>
-                        <img src="./assets/images/img-product-01.jpg" alt="" />
-                        <figcaption>보아르 전기히터 상세 이미지 1</figcaption>
-                    </figure>
-                </li>
-                <li role="tabpanel" aria-labelledby="product-carousel-tab-2">
-                    <figure>
-                        <img src="./assets/images/img-product-02.jpg" alt="" />
-                        <figcaption>보아르 전기히터 상세 이미지 2</figcaption>
-                    </figure>
-                </li>
-                <li role="tabpanel" aria-labelledby="product-carousel-tab-3">
-                    <figure>
-                        <img src="./assets/images/img-product-03.jpg" alt="" />
-                        <figcaption>보아르 전기히터 상세 이미지 3</figcaption>
-                    </figure>
-                </li>
-                <li role="tabpanel" aria-labelledby="product-carousel-tab-4">
-                    <figure>
-                        <img src="./assets/images/img-product-04.jpg" alt="" />
-                        <figcaption>보아르 전기히터 상세 이미지 4</figcaption>
-                    </figure>
-                </li>
-            </ol>
+            <div class="row">
+                <div class="col-sm-4 col-md-6 col-lg-7">
+                    <div class="product-carousel" role="region">
+                        <div class="product-carousel-slider">
+                            <ol class="slider-list">
+                                <li class="slider-item" role="tabpanel" aria-labelledby="product-carousel-tab-1">
+                                    <figure>
+                                        <img src="./assets/images/img-product-01.jpg" alt="" />
+                                        <figcaption class="visually-hidden">
+                                            보아르 전기히터 상세 이미지 1
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="slider-item" role="tabpanel" aria-labelledby="product-carousel-tab-2">
+                                    <figure>
+                                        <img src="./assets/images/img-product-02.jpg" alt="" />
+                                        <figcaption class="visually-hidden">
+                                            보아르 전기히터 상세 이미지 2
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="slider-item" role="tabpanel" aria-labelledby="product-carousel-tab-3">
+                                    <figure>
+                                        <img src="./assets/images/img-product-03.jpg" alt="" />
+                                        <figcaption class="visually-hidden">
+                                            보아르 전기히터 상세 이미지 3
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="slider-item" role="tabpanel" aria-labelledby="product-carousel-tab-4">
+                                    <figure>
+                                        <img src="./assets/images/img-product-04.jpg" alt="" />
+                                        <figcaption class="visually-hidden">
+                                            보아르 전기히터 상세 이미지 4
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ol>
+                        </div>
 
-            <ol role="tablist">
-                <li id="product-carousel-tab-1" role="tab">
-                    <button type="button">
-                        <img src="./assets/images/img-product-01.jpg" alt="1번 이미지" />
-                    </button>
-                </li>
-                <li id="product-carousel-tab-2" role="tab">
-                    <button type="button">
-                        <img src="./assets/images/img-product-02.jpg" alt="2번 이미지" />
-                    </button>
-                </li>
-                <li id="product-carousel-tab-3" role="tab">
-                    <button type="button">
-                        <img src="./assets/images/img-product-03.jpg" alt="3번 이미지" />
-                    </button>
-                </li>
-                <li id="product-carousel-tab-4" role="tab">
-                    <button type="button">
-                        <img src="./assets/images/img-product-04.jpg" alt="4번 이미지" />
-                    </button>
-                </li>
-            </ol>
+                        <div class="product-carousel-thumbnail">
+                            <ol class="thumbnail-list" role="tablist">
+                                <li class="thumbnail-item" id="product-carousel-tab-1" role="tab">
+                                    <button type="button">
+                                        <img src="./assets/images/img-product-01.jpg" alt="1번 이미지" />
+                                    </button>
+                                </li>
+                                <li class="thumbnail-item" id="product-carousel-tab-2" role="tab">
+                                    <button type="button">
+                                        <img src="./assets/images/img-product-02.jpg" alt="2번 이미지" />
+                                    </button>
+                                </li>
+                                <li class="thumbnail-item" id="product-carousel-tab-3" role="tab">
+                                    <button type="button">
+                                        <img src="./assets/images/img-product-03.jpg" alt="3번 이미지" />
+                                    </button>
+                                </li>
+                                <li class="thumbnail-item" id="product-carousel-tab-4" role="tab">
+                                    <button type="button">
+                                        <img src="./assets/images/img-product-04.jpg" alt="4번 이미지" />
+                                    </button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -299,16 +315,36 @@
                     <p class="global-footer-time">
                         평일 09:00 ~ 18:00 (주말 &amp; 공휴일 제외)
                     </p>
-                    <dl class="global-footer-detail-list">
-                        <dt>이메일</dt>
-                        <dd>
-                            <address>
-                                <a href="mailto:kimbugx@gmail.com">kimbugx@gmail.com</a>
-                            </address>
-                            (제휴문의)
-                        </dd>
-                    </dl>
 
+                    <dl class="global-footer-detail-list">
+                        <div class="global-footer-detail-item">
+                            <dt>상호명</dt>
+                            <dd>버그가 너무 많아 김버그</dd>
+                        </div>
+                        <div class="global-footer-detail-item">
+                            <dt>이메일</dt>
+                            <dd>
+                                <address>
+                                    <a href="mailto:kimbugx@gmail.com">kimbugx@gmail.com</a>
+                                </address>
+                                (제휴문의)
+                            </dd>
+                        </div>
+                        <div class="global-footer-detail-item">
+                            <dt>대표이사</dt>
+                            <dd>김버그</dd>
+                        </div>
+                        <div class="global-footer-detail-item">
+                            <dt>주소</dt>
+                            <dd>
+                                <address>
+                                    <a href="https://www.youtube.com/c/kimbug" target="_blank">
+                                        https://www.youtube.com/c/kimbug
+                                    </a>
+                                </address>
+                            </dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
         </div>
