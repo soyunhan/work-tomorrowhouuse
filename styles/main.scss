@@ -10,11 +10,12 @@
 @import './base/reset';
 @import './base/globals';
 
-@import './mixins/text_style';
+@import './mixins/text-style';
 @import './mixins/responsive';
 @import './mixins/positions';
 @import './mixins/flexbox';
 @import './mixins/scrollbar';
+@import './mixins/star-rating';
 
 @import './modules/tags';
 @import './modules/avatars';
